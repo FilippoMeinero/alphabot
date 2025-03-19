@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <title>RobotControl - Homepage</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../static/style.css">
+</head>
+
+<body>
+    <div class="header-decorativo"></div>
+    
+    <div class="contenitore">
+        <div class="intestazione">Dashboard</div>
+        
+        <form action="/pagina_principale" method="POST">
+            <h2 class="titolo-pagina">Benvenuto nel Pannello di Controllo</h2>
+            
+            <p style="text-align: center; margin-bottom: 20px;">
+                Da qui puoi accedere alle funzionalità per controllare il tuo robot.
+            </p>
+            
+            <a href="/controllo" class="btn">
+                <i class="fas fa-robot"></i> Vai al Controllo Robot
+            </a>
+            
+            <a href="/disconnessione" class="btn btn-secondario">
+                <i class="fas fa-sign-out-alt"></i> Disconnetti
+            </a>
+        </form>
+    </div>
+</body>
+
+</html>
