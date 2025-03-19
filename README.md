@@ -11,7 +11,7 @@ Sono presenti due cartelle:
 
 
 ## Alcune accortezze 
-Prima di avviare il programma, verificare che gli **indirizzi IP** assegnati nei file `app.py`, `server.py` e `client.py` siano **corretti**. Se gli IP non sono impostati correttamente, la comunicazione tra i dispositivi non funzionerà.
+Prima di avviare il programma, verificare che gli **indirizzi IP** assegnati nei file `server.py` e `client.py` siano **corretti**. Se gli IP non sono impostati correttamente, la comunicazione tra i dispositivi non funzionerà.
 
 ---
 
