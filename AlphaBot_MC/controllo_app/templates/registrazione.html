@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <title>RobotControl - Registrazione</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../static/style.css">
+</head>
+
+<body>
+    <div class="header-decorativo"></div>
+    
+    <div class="contenitore">
+        <div class="intestazione">Crea un Account</div>
+        
+        <form action="/registrazione" method="POST">
+            <div class="gruppo-input">
+                <label for="email">Indirizzo Email</label>
+                <input type="email" placeholder="Inserisci la tua email" id="email" name="email" required>
+            </div>
+            
+            <div class="gruppo-input">
+                <label for="password">Password</label>
+                <input type="password" placeholder="Crea una password sicura" id="password" name="password" required>
+            </div>
+            
+            <button type="submit" class="btn">Registrati</button>
+            
+            <div class="separatore">
+                <span>oppure</span>
+            </div>
+            
+            <div class="social-login">
+                <div class="btn-social btn-google">
+                    <i class="fab fa-google"></i> Google
+                </div>
+                <div class="btn-social btn-facebook">
+                    <i class="fab fa-facebook-f"></i> Facebook
+                </div>
+            </div>
+            
+            <div class="link-fondo">
+                Hai già un account? <a href="/accesso">Accedi</a>
+            </div>
+        </form>
+    </div>
+
+    {% if messaggio %}
+    <script>
+        alert("{{ messaggio }}");
+    </script>
+    {% endif %}
+</body>
+
+</html>
